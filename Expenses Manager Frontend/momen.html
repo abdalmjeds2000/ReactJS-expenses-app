@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Momen - demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='css/custom.css'>
+</head>
+
+<body>
+  <!-- content -->
+  <div class="container mt-5">
+    <!-- row : from -->
+    <div class="row">
+      <!-- col -->
+      <div class="col-sm-6">
+        <img src="img/m1.png" class="img-fluid" alt="">
+      </div>
+      <div class="col-sm-6 mt-5">
+        <div class="row tit">
+          <h4 class="">wellcom to Momen Expense Manager </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam
+          </p>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control addTitle" aria-describedby="">
+          </div>
+
+          <div class="mb-3 col-md-6">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control addDate" aria-describedby="">
+          </div>
+
+
+          <div class="mb-3 col-md-6">
+            <label class="form-label">Value</label>
+            <input type="number" class="form-control addValue" aria-describedby="">
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="title" class="form-label">Description</label>
+            <input type="text" class="form-control addDescrption" aria-describedby="">
+          </div>
+          <div class="mb-3 col-md-12 text-right">
+            <button type="submit" class="btn btn-primary addBtn">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- #col -->
+    </div>
+    <!-- #row : from -->
+
+    <!-- row :dispaly table -->
+    <div class="row mt-5 mb-5">
+      <div class="custom-card ">
+        <table class="table ">
+          <thead>
+            <tr>
+              <th> Title</th>
+              <th> Date</th>
+              <th>value</th>
+              <th>Description</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="addRow">
+            </tr>
+            <tr>
+              <td> House rent </td>
+              <td> 2022-05-09</td>
+              <td>300$ </td>
+              <td colspan="2">any descrption can be here </td>
+              <td class="text-right"><a href="#" class="delete" onClick="deleteRow(this)"><i class="fa fa-trash-o"
+                    aria-hidden="true"></a></td>
+            </tr>
+            <tr>
+              <td> electricity bill </td>
+              <td>2022-06-02</td>
+              <td>50$ </td>
+              <td colspan="2">any descrption can be here </td>
+              <td class="text-right"><a href="#" class="delete" onClick="deleteRow(this)"><i class="fa fa-trash-o"
+                    aria-hidden="true"></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- #cusotm card -->
+      </div>
+    </div>
+    <!-- #row :dispaly table -->
+  </div>
+  <!-- #content -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src='js/custom.js'></script>
+</body>
+
+</html>
